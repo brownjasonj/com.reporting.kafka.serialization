@@ -6,7 +6,7 @@
 
     <groupId>com.reporting.kafka</groupId>
     <artifactId>serialization</artifactId>
-    <version>0.3.2-SNAPSHOT</version>
+    <version>0.4.0</version>
 
     <name>model</name>
     <!-- FIXME change it to the project's website -->

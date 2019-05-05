@@ -1,8 +1,6 @@
 package com.reporting.kafka.serialization;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import org.apache.kafka.common.serialization.Serializer;
 
 
@@ -20,7 +18,6 @@ public class UUIDSerializer implements Serializer<UUID> {
         byte[] retVal = null;
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            Gson gson = new GsonBuilder().create();
             retVal = objectMapper.writeValueAsString(uuid.toString()).getBytes();
         } catch (Exception e) {
             e.printStackTrace();
